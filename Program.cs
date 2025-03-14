@@ -1,5 +1,7 @@
-﻿string nome;
+﻿string nomeDigitado;
 string sobrenome;
+string nomeMaiusculas;
+
 
 // Console.WriteLine("Pressione uyma tecla para continuar...");
 // Console.ReadKey(true);
@@ -7,10 +9,14 @@ string sobrenome;
 
 Console.Clear();
 
+
+
 Console.Write("Nome.......: ");
-nome = Console.ReadLine()!;
+nomeDigitado = Console.ReadLine()!;
+
+nomeMaiusculas = nomeDigitado.ToUpper();
 
 Console.Write("Sobrenome..:");
 sobrenome = Console.ReadLine()!;
 
-Console.WriteLine($"Boa noite, {nome} {sobrenome}!");
+Console.WriteLine($"Boa noite, {nomeMaiusculas} {sobrenome}!");
